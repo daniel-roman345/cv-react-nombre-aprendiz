@@ -1,0 +1,8 @@
+.badges-container { display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.5rem; }
+.badge { padding:0.35rem 0.6rem; border-radius:12px; font-size:0.9rem; color:white; }
+.badge-frontend { background:#1e90ff; } /* azul */
+.badge-backend { background:#2ecc71; }  /* verde */
+.badge-database { background:#ff8c42; } /* naranja */
+.badge-devops { background:#6a5acd; }   /* morado */
+.badge-cloud { background:#00aaff; }    /* celeste */
+.badge-default { background:#7f8c8d; }  /* gris */
