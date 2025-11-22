@@ -1,0 +1,11 @@
+﻿/* src/App.css - estilos mínimos para evitar errores */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  padding: 1rem;
+  background: #f7f9fb;
+  color: #111;
+}
+header, section, main {
+  margin-bottom: 1rem;
+}
