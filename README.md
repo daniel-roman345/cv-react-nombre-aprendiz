@@ -1,16 +1,69 @@
-# React + Vite
+# CV Dinámico en React — Daniel Salas Román
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto implementa un Currículum Vitae modular y dinámico desarrollado con **React + Vite**, aplicando conceptos de creación de componentes, anidación, renderizado de listas y control de versiones con Git. El objetivo es representar la información personal en un formato estructurado y reutilizable mediante componentes independientes.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## React Compiler
+- React 18
+- Vite
+- JavaScript moderno (ESM)
+- CSS modular
+- Git y GitHub
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📂 Estructura del proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+components/
+CabeceraCV.jsx
+Perfil.jsx
+Experiencia.jsx
+Educacion.jsx
+StackTecnologias.jsx
+stack.css
+App.jsx
+main.jsx
+index.css
+---
+
+## 📌 Descripción general de los componentes
+
+### CabeceraCV.jsx
+Incluye nombre completo, rol profesional y datos de contacto.
+
+### Perfil.jsx
+Contiene una descripción personal y profesional breve.
+
+### Experiencia.jsx
+Renderiza dinámicamente una lista de **10 experiencias laborales o proyectos** utilizando `.map()`.
+
+### Educacion.jsx
+Muestra formación académica y cursos complementarios en formato dinámico.
+
+### StackTecnologias.jsx
+Incluye renderizado condicional y aplicación de clases CSS dinámicas según el nivel de dominio.
+
+---
+
+## ▶ Cómo ejecutar el proyecto
+
+1. Clonar el repositorio:
+```bash
+git clone https://github.com/daniel-roman345/cv-react-nombre-aprendiz.git
+
+Instalar dependencias:
+
+npm install
+
+
+Ejecutar el servidor de desarrollo:
+
+npm run dev
+
+
+Abrir en el navegador:
+
+http://localhost:5173
