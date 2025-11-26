@@ -1,69 +1,41 @@
-# CV Dinámico en React — Daniel Salas Román
+README.md — Proyecto React CV | Daniel Salas Román
+📌 Información General
 
-Este proyecto implementa un Currículum Vitae modular y dinámico desarrollado con **React + Vite**, aplicando conceptos de creación de componentes, anidación, renderizado de listas y control de versiones con Git. El objetivo es representar la información personal en un formato estructurado y reutilizable mediante componentes independientes.
+Proyecto desarrollado como evidencia para la actividad GA1-220501096-03-AA1-EV05, implementando la creación y anidación de componentes en React utilizando Vite.
 
----
+Autor: Daniel Salas Román
+Fecha: 2025
+Tecnologías: React + Vite + JavaScript ES6
+
+# CV React – Proyecto con Props y Desestructuración
+
+
+Este proyecto corresponde a la actividad **GA1-220501096-03-AA1-EV07**, cuyo objetivo es crear una hoja de vida dinámica utilizando **React**, **props** y **desestructuración**, asegurando la modularidad, reutilización de componentes y separación de responsabilidades.
+
 
 ## 🚀 Tecnologías utilizadas
-
 - React 18
 - Vite
-- JavaScript moderno (ESM)
-- CSS modular
-- Git y GitHub
-
----
-
-## 📂 Estructura del proyecto
-
-src/
-components/
-CabeceraCV.jsx
-Perfil.jsx
-Experiencia.jsx
-Educacion.jsx
-StackTecnologias.jsx
-stack.css
-App.jsx
-main.jsx
-index.css
----
-
-## 📌 Descripción general de los componentes
-
-### CabeceraCV.jsx
-Incluye nombre completo, rol profesional y datos de contacto.
-
-### Perfil.jsx
-Contiene una descripción personal y profesional breve.
-
-### Experiencia.jsx
-Renderiza dinámicamente una lista de **10 experiencias laborales o proyectos** utilizando `.map()`.
-
-### Educacion.jsx
-Muestra formación académica y cursos complementarios en formato dinámico.
-
-### StackTecnologias.jsx
-Incluye renderizado condicional y aplicación de clases CSS dinámicas según el nivel de dominio.
-
----
-
-## ▶ Cómo ejecutar el proyecto
-
-1. Clonar el repositorio:
-```bash
-git clone https://github.com/daniel-roman345/cv-react-nombre-aprendiz.git
-
-Instalar dependencias:
-
-npm install
+- TailwindCSS
+- JavaScript moderno (ESModules, JSX)
 
 
-Ejecutar el servidor de desarrollo:
+## 🧩 Componentes reutilizables
+El proyecto integra 4 componentes principales que reciben props:
 
-npm run dev
+
+- **CabeceraCV.jsx** → recibe nombre, cargo, ciudad y contacto.
+- **Perfil.jsx** → recibe resumen profesional.
+- **Experiencia.jsx** → recibe un arreglo dinámico de experiencias.
+- **Educacion.jsx** → recibe una lista de estudios.
 
 
-Abrir en el navegador:
+Cada componente utiliza **desestructuración** para acceder a sus props.
 
-http://localhost:5173
+
+## 📂 Organización de datos
+Los datos se almacenan en el archivo `data.js` y se importan en `App.jsx`.
+
+
+## ▶️ Ejecución del proyecto
+1. Instala las dependencias:
