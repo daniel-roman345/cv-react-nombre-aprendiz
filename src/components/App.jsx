@@ -1,20 +1,17 @@
 import React from "react";
 import CabeceraCV from "./components/CabeceraCV";
 import Perfil from "./components/Perfil";
-import Educacion from "./components/Educacion";
 import Experiencia from "./components/Experiencia";
-import StackTecnologias from "./components/StackTecnologias";
-import "./index.css";
+import Educacion from "./components/Educacion";
 
 function App() {
   return (
-    <main>
+    <div style={{ padding: "40px", fontFamily: "Arial, sans-serif" }}>
       <CabeceraCV />
       <Perfil />
-      <Educacion />
       <Experiencia />
-      <StackTecnologias />
-    </main>
+      <Educacion />
+    </div>
   );
 }
 

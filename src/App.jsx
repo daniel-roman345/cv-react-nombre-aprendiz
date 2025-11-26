@@ -1,35 +1,66 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import CabeceraCV from "./components/CabeceraCV";
+import Perfil from "./components/Perfil";
+import Experiencia from "./components/Experiencia";
+import Educacion from "./components/Educacion";
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  // Datos personales
+  const nombre = "Daniel salas";
+  const cargo = "Frontend Developer";
+  const ciudad = "Medellin, Colombia";
+  const contacto = "daniel992007@gmail.com";
+
+  // Resumen profesional
+  const resumen = "Desarrollador frontend con experiencia en React, diseño de interfaces, integración de APIs y creación de componentes reutilizables.";
+
+  // Experiencias laborales (array dinámico)
+  const experiencias = [
+    {
+      cargo: "Desarrollador React",
+      empresa: "Tech Solutions",
+      periodo: "2022 - 2024"
+    },
+    {
+      cargo: "Frontend Trainee",
+      empresa: "Digital Factory",
+      periodo: "2021 - 2022"
+    }
+  ];
+
+  // Estudios (array dinámico)
+  const estudios = [
+    {
+      titulo: "Tecnólogo en Análisis y Desarrollo de Software",
+      institucion: "SENA",
+      periodo: "2021 - 2023"
+    },
+    {
+      titulo: "Curso de React Avanzado",
+      institucion: "Platzi",
+      periodo: "2023"
+    }
+  ];
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className='container mx-auto p-6'>
+      
+      <CabeceraCV 
+        nombre={nombre}
+        cargo={cargo}
+        ciudad={ciudad}
+        contacto={contacto}
+      />
+
+      <Perfil resumen={resumen} />
+
+      <Experiencia experiencias={experiencias} />
+
+      <Educacion estudios={estudios} />
+
+    </div>
+  );
 }
 
-export default App
+export default App;
+
