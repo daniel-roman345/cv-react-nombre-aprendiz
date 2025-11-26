@@ -1,17 +1,13 @@
-import React from "react";
-
-function CabeceraCV() {
+function CabeceraCV({ nombre, cargo, ciudad, contacto }) {
+    
   return (
-    <header style={{ padding: "20px", background: "#f0f0f0", borderRadius: "10px" }}>
-      <h1>Daniel Salas Román</h1>
-      <h2>Desarrollador Front-End Jr.</h2>
-
-      <p><strong>Teléfono:</strong> 3001234567</p>
-      <p><strong>Correo:</strong> daniel.salas@example.com</p>
-      <p><strong>Ciudad:</strong> Colombia</p>
+    <header className="mb-6 border-b pb-4">
+      <h1 className="text-3xl font-bold">{nombre}</h1>
+      <p className="text-xl text-gray-700">{cargo}</p>
+      <p className="text-gray-600">{ciudad}</p>
+      <p className="text-gray-600">{contacto}</p>
     </header>
   );
 }
 
 export default CabeceraCV;
-
