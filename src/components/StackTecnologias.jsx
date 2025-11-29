@@ -1,19 +1,6 @@
 // src/components/StackTecnologias.jsx
 import React from "react";
-import './stack.css'; // archivo CSS para badges
-
-const tecnologias = [
-  { id: 1, nombre: "React", tipo: "frontend" },
-  { id: 2, nombre: "JavaScript", tipo: "frontend" },
-  { id: 3, nombre: "Node.js", tipo: "backend" },
-  { id: 4, nombre: "Express", tipo: "backend" },
-  { id: 5, nombre: "PostgreSQL", tipo: "database" },
-  { id: 6, nombre: "MongoDB", tipo: "database" },
-  { id: 7, nombre: "TypeScript", tipo: "frontend" },
-  { id: 8, nombre: "Docker", tipo: "devops" },
-  { id: 9, nombre: "AWS", tipo: "cloud" },
-  { id: 10, nombre: "Tailwind", tipo: "frontend" },
-];
+import "./stack.css";
 
 const clasePorTipo = (tipo) => {
   switch (tipo) {
@@ -26,7 +13,7 @@ const clasePorTipo = (tipo) => {
   }
 };
 
-export default function StackTecnologias() {
+export default function StackTecnologias({ tecnologias }) {
   if (!tecnologias || tecnologias.length === 0) {
     return (
       <section>
@@ -40,8 +27,8 @@ export default function StackTecnologias() {
     <section>
       <h3>Stack de Tecnologías</h3>
       <div className="badges-container">
-        {tecnologias.map((tech) => (
-          <span key={tech.id} className={clasePorTipo(tech.tipo)}>
+        {tecnologias.map((tech, i) => (
+          <span key={i} className={clasePorTipo(tech.tipo)}>
             {tech.nombre}
           </span>
         ))}

@@ -39,3 +39,11 @@ Los datos se almacenan en el archivo `data.js` y se importan en `App.jsx`.
 
 ## ▶️ Ejecución del proyecto
 1. Instala las dependencias:
+
+### Funcionalidades interactivas añadidas (GA1-220501096-03-AA1-EV08)
+
+Se implementaron dos componentes interactivos:
+- **ToggleHabilidades**: botón para mostrar/ocultar la sección de habilidades (useState y renderizado condicional).
+- **FormularioTecnologia**: formulario controlado que permite agregar tecnologías al stack (useState, onChange, onSubmit).
+
+La lista de tecnologías se mantiene en `App.jsx` (estado principal) y se inicializa desde `src/cvData.js`. Se utiliza `setTecnologias(prev => [...prev, nueva])` para evitar mutaciones directas del estado y mantener la inmutabilidad.
